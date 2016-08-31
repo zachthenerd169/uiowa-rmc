@@ -167,7 +167,27 @@ You can now delete the feature branch since the feature has been added to the de
 <hr>
 #Appendix
 ##How To Make Good Commits
-(Coming Soon)
+Each commit message should consist of two parts: the subject, and the body.  The subject of the commit message should be the first line of the message, contain a short summary of the changes, and generally be less than 50 characters long.  The body of the commit message is seperated from the subject by a blank line and contains an expanation of why the changes where made.
+
+The subject of the message should be written in the imperative form, or in other words: say what the commit should do, not what it is doing, or what it did. (eg. "Clean up room", not "Cleaning up room", or "Cleaned up room")
+
+The body of the message should avoid stating *how* a change was made and instead focus on *what* and *why* changes were made.  Good questions to answer in the message body are "Why is the change necessary?", "How does this change address the issue?", and "What side effects might this change have?"
+
+Examples of good commit messages:
+```
+Resolve networking freezing error
+
+Resolve error where network would freeze when receiving a message that ended
+in \r\n instead of \n by parsing the message for carriage returns and removing them.
+
+This may conflict with messages that contain \r but I don't see any
+reason why a valid message would contain \r anyways. 
+```
+
+Some commits do not need bodys to explain what they do
+```
+Fix typos in user guide
+```
 
 ##Merge or Rebase
 (Coming Soon)
