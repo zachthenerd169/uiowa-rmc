@@ -1,5 +1,5 @@
 #Git Readme
->An introduction to how git and github are used by the uiowa robotics team.  This is not the only possible git workflow but by working this way we can ensure a highly functional code base where every team member can contribute without the risk of damaging the overall performace of the robot.
+>An introduction to how git and github are used by the uiowa robotics team.  This is not the only possible git workflow but by working this way we can ensure a highly functional code base where every team member can contribute without the risk of damaging the overall performance of the robot.
 
 <hr>
 
@@ -28,7 +28,7 @@
 <hr>
 #Getting Started
 ##Getting Git
-* **Recomended:** [link](https://desktop.github.com)
+* **Recommended:** [link](https://desktop.github.com)
     - Installs GUI and command line tools for OSX or Windows
 * **OSX:** 
     - Included in Xcode
@@ -48,7 +48,7 @@ Ask a senior developer to add you to the list of contributers. Without this you 
 ###Branch Structure
 The repository is divided into a single master branch, a single development branch, and many experimental branches.
 * The **master branch** contains the code that is **guaranteed** to work on the robot.  This will generally have less features that the development branch but is considered the safest code to run.
-* The **development branch** contains the code that has the **most features**, but has not been sufficiantly tested as a whole system to be guaranteed to function without error.
+* The **development branch** contains the code that has the **most features**, but has not been sufficiently tested as a whole system to be guaranteed to function without error.
 * The **experimental branches** contain code under development, and should differ from the development branch by only a **single feature**.  
 
 ###Code Structure
@@ -152,7 +152,7 @@ $ git push origin
 ```
 
 ##Merging a Feature
->Note: Although not requred, it is heavily encouraged that the person who creates a pull request is different from the person who merges it.
+>Note: Although not required, it is heavily encouraged that the person who creates a pull request is different from the person who merges it.
 
 Once the feature has been deemed finished, it can be merged with the development branch.
 
@@ -167,7 +167,7 @@ You can now delete the feature branch since the feature has been added to the de
 <hr>
 #Appendix
 ##How To Make Good Commits
-Each commit message should consist of two parts: the subject, and the body.  The subject of the commit message should be the first line of the message, contain a short summary of the changes, and generally be less than 50 characters long.  The body of the commit message is seperated from the subject by a blank line and contains an expanation of why the changes where made.
+Each commit message should consist of two parts: the subject, and the body.  The subject of the commit message should be the first line of the message, contain a short summary of the changes, and generally be less than 50 characters long.  The body of the commit message is separated from the subject by a blank line and contains an explanation of why the changes where made.
 
 The subject of the message should be written in the imperative form, or in other words: say what the commit should do, not what it is doing, or what it did. (eg. "Clean up room", not "Cleaning up room", or "Cleaned up room")
 
@@ -184,7 +184,7 @@ This may conflict with messages that contain \r but I don't see any
 reason why a valid message would contain \r anyways. 
 ```
 
-Some commits do not need bodys to explain what they do
+Some commits do not need bodies to explain what they do
 ```
 Fix typos in user guide
 ```
