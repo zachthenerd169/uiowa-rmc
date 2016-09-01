@@ -190,7 +190,15 @@ Fix typos in user guide
 ```
 
 ##Merge or Rebase
-(Coming Soon)
+The general rule of thumb for our workflow is that merge is used to integrate a child branch into a parent branch, and rebase is used to keep child branches up to date with their parent.
+
+###Merge
+Merging one branch into another creates copies of all the commits that are different on the other branch and applies them to your branch.  This is useful when merging an experimental branch with the development branch because the the changes are *applied* to the development branch.
+
+###Rebase
+Rebasing one branch on another *reapplies* all of the commits from your branch onto the HEAD of the other branch without creating any new commits.  This is useful when keeping an experimental branch up to date because it does not create anything new.
+
+Rebase can also be used to squash multiple previous commits into single commits. This can be useful to tidy up the commit history of an experimental branch before merging it with the development branch.
 
 ##What To Do If Something Goes Wrong
 > Note: if you are not comfortable fixing problems on your own, ask for help from a senior developer.  DO NOT ENTER COMMANDS IF YOU DON'T KNOW WHAT THEY DO! It is shockingly easy to corrupt the git repository or even erase it by carelessly entering commands.
